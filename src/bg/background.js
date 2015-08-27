@@ -1,7 +1,9 @@
 var currentSite = null;
 var currentTabId = null;
 var startTime = null; // beginning of interval
+
 var updateInterval = 1000 * 3; // 3 seconds - how frequently the bg page updates
+
 var badUrls = []
 
 var URLRegEx = /^(\w+:\/\/[^\/]+).*$/;
@@ -174,10 +176,14 @@ function updateTime(site, seconds) {
   console.log('There are ' + badTimer/60 + ' minutes on your bad timer, against a threshold of ' + badThreshold/60)
 	// push timer back in
   if (badTimer > badThreshold){
+<<<<<<< HEAD
     chrome.browserAction.setIcon({path: "icons/sadicon16.png"}, function(){
           console.log('in callback')
           alert('Uh oh! You are out of time. Go log some happy')
         });
+=======
+    alert('Uh oh! You are out of time. Go log some happy')
+>>>>>>> 9175b1c9f9d708a2976bbccf5496d4529bce1688
 
   }
 }
@@ -272,6 +278,32 @@ function initialize(){
         chrome.browserAction.setIcon({path: "icons/happyicon16.png"}, function(){
           console.log('in callback')
         });
+      }
+  })
+
+  // setting listeners for requests
+  // chrome.webRequest.onBeforeRequest.addListener(function(details){
+  //   console.log('intercepted'+details.url.split(".")[1])
+  //   var badUrls = []
+  //   for (i=0; i<badSites.length; i++){
+  //     badUrls[i] = ""
+  //     badUrls[i] = "*//"+badSites[i]+"/*"
+  //   }
+  //   console.log(badUrls)
+  //   // if (details.url.split(".")[1] != "scientificamerican"){
+  //   return {
+  //     redirectUrl: 'http://www.scientificamerican.com/article/smile-it-could-make-you-happier/'}
+      
+  //   },
+  //   {
+  //     urls: badUrls
+  //   },
+  //   ['blocking'])
+
+  chrome.extension.onRequest.addListener(
+    function(request, sender, sendResponse) {
+      if (request.action == "allowBrowsing") {
+        alert('Good job! You can now browse again.')
         localStorage.allowedToBrowse = "true"
         localStorage.badTimer = 0
         sendResponse({});

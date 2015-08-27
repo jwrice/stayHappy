@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 var happyUnits = 0 // this is the counter for the amount of "happy" the user has logged in the popup
+=======
+var happyUnits = 0
+>>>>>>> 9175b1c9f9d708a2976bbccf5496d4529bce1688
 var vid = document.getElementById('videoel');
 
 var overlay = document.getElementById('overlay');
@@ -40,7 +44,11 @@ if (navigator.getUserMedia) {
 	alert("This demo depends on getUserMedia, which your browser does not seem to support. :(");
 }
 
+<<<<<<< HEAD
 // emotion detection setup
+=======
+/*********** setup of emotion detection *************/
+>>>>>>> 9175b1c9f9d708a2976bbccf5496d4529bce1688
 
 var ctrack = new clm.tracker({useWebGL : true});
 ctrack.init(pModel);
@@ -61,6 +69,10 @@ function drawLoop() {
 	requestAnimFrame(drawLoop);
 	overlayCC.clearRect(0, 0, 400, 400);
 	overlaychop.clearRect(0, 0, 200, 200)
+<<<<<<< HEAD
+=======
+	//psrElement.innerHTML = "score :" + ctrack.getScore().toFixed(4);
+>>>>>>> 9175b1c9f9d708a2976bbccf5496d4529bce1688
 	
 	currentPosition = ctrack.getCurrentPosition();
 	
@@ -84,7 +96,10 @@ function drawLoop() {
 	var w = (drawInputs[2])
 	var h = (drawInputs[3])
 	var r = 10
+<<<<<<< HEAD
 	// old code for finessing the overlay into a smaller window. it proved cumbersome
+=======
+>>>>>>> 9175b1c9f9d708a2976bbccf5496d4529bce1688
 	// overlaychop.save()
 	// 	overlaychop.beginPath();
 	//   	overlaychop.moveTo(x + r, y);
@@ -145,6 +160,13 @@ function drawLoop() {
 				}
 				if (happyUnits > 0){
 					var barUnits = happyUnits*3
+<<<<<<< HEAD
+=======
+					// document.getElementById('happy_container').innerHTML =
+					// 'You\'ve earned ' +
+					// Math.round(happyUnits) +
+					// ' happiness units'
+>>>>>>> 9175b1c9f9d708a2976bbccf5496d4529bce1688
 					document.getElementById('progress_bar').style.width = ""+ barUnits +"%"
 				} else {document.getElementById('happy_container').innerHTML = ""}
 				
@@ -231,9 +253,27 @@ function updateData(data) {
 	texts.exit().remove();
 }
 
+<<<<<<< HEAD
 var seconds_left = 4;
 setInterval(function() {
     document.getElementById('happy_container').innerHTML = "countdown: " + --seconds_left + " seconds - ready to smile?";
+=======
+/******** stats ********/
+
+// stats = new Stats();
+// stats.domElement.style.position = 'absolute';
+// stats.domElement.style.top = '10px';
+// document.getElementById('container').appendChild( stats.domElement );
+
+// // update stats on every iteration
+// document.addEventListener('clmtrackrIteration', function(event) {
+// 	stats.update();
+// }, false);
+
+var seconds_left = 4;
+setInterval(function() {
+    document.getElementById('happy_container').innerHTML = "countdown: " + --seconds_left + " seconds";
+>>>>>>> 9175b1c9f9d708a2976bbccf5496d4529bce1688
 
     if (seconds_left <= 0)
     {
@@ -244,7 +284,19 @@ setInterval(function() {
 
 setTimeout(startVideo, 4000);
 
+<<<<<<< HEAD
 // toggle buttons to show model, face, and emotion graph elements in the pop up
+=======
+// functions for requests to the backend
+// var allowBrowsing(){
+// 	chrome.extension.sendRequest({action: "allowBrowsing"},
+// 		function(response){
+// 		})
+// }
+
+// buttons - element visibility
+
+>>>>>>> 9175b1c9f9d708a2976bbccf5496d4529bce1688
 var toggleModel = function(){
 	var model = document.getElementById("container")
 	if (model.style.display == ''){
