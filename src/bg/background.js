@@ -176,15 +176,10 @@ function updateTime(site, seconds) {
   console.log('There are ' + badTimer/60 + ' minutes on your bad timer, against a threshold of ' + badThreshold/60)
 	// push timer back in
   if (badTimer > badThreshold){
-<<<<<<< HEAD
     chrome.browserAction.setIcon({path: "icons/sadicon16.png"}, function(){
           console.log('in callback')
           alert('Uh oh! You are out of time. Go log some happy')
         });
-=======
-    alert('Uh oh! You are out of time. Go log some happy')
->>>>>>> 9175b1c9f9d708a2976bbccf5496d4529bce1688
-
   }
 }
 
