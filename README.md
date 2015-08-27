@@ -5,4 +5,4 @@
 
 [![Image2](http://mo.j0e.io/image/161u1A2r1y3m)]
 
-[![Image3](http://mo.j0e.io/image/161u1A2r1y3m)](http://mo.j0e.io/image/161u1A2r1y3m)
+[![Image3](http://mo.j0e.io/image/161u1A2r1y3m/download/Image%202015-08-25%20at%204.08.49%20PM.png)](http://mo.j0e.io/image/161u1A2r1y3m/download/Image%202015-08-25%20at%204.08.49%20PM.png)
