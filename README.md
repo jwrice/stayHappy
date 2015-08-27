@@ -5,7 +5,6 @@ Facial expressions (whether natural or forced) can have a [major impact on your 
 
 So, I built a Chrome Extension (based on Arduno's [clmtrackr library](https://github.com/auduno/clmtrackr)) to help you *StayHappy* while you browse certain types of sites
 
----
 #####How It Works (replace me w real demo link)
 [![Replace me with real demo gif](http://mo.j0e.io/image/2J0a1I1q2p05/download/Screen%20Recording%202015-08-27%20at%2004.39%20PM.gif)](http://mo.j0e.io/image/2J0a1I1q2p05/download/Screen%20Recording%202015-08-27%20at%2004.39%20PM.gif)
 ___
