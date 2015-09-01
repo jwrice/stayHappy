@@ -1,5 +1,5 @@
 .DS_Store
-*/.DS_Store
+src/.DS_Store
 npm-debug.log
 public
 coverage
