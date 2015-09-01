@@ -130,7 +130,7 @@ function drawLoop() {
 				if (er[3].value > .4){
 					happyUnits = happyUnits + .35
 					console.log(happyUnits)
-					if (happyUnits > 60) {
+					if (happyUnits > 80) {
 						chrome.extension.sendRequest(
 							{action: "allowBrowsing",},
 							function(response) {
