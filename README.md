@@ -8,7 +8,7 @@ So, I built a Chrome Extension (based on Arduno's [clmtrackr library](https://gi
 ---
 
 #####How It Works
-[![Demo](http://mo.j0e.io/image/403P2D0o2M3d/download/Screen%20Recording%202015-08-30%20at%2006.02%20PM.gif)](http://mo.j0e.io/image/403P2D0o2M3d/download/Screen%20Recording%202015-08-30%20at%2006.02%20PM.gif)
+[![Demo](https://s3.amazonaws.com/f.cl.ly/items/0y0M3b0I302H2x1X3M0Y/Screen%20Recording%202015-08-30%20at%2006.02%20PM.gif)](https://s3.amazonaws.com/f.cl.ly/items/0y0M3b0I302H2x1X3M0Y/Screen%20Recording%202015-08-30%20at%2006.02%20PM.gif)
 <!-- ___
 - [Installation](#installation)
 - [Features](#features)
